@@ -22,4 +22,6 @@ public class Hotel {
     private String name;
     private String location;
     private String about;
+
+    System.out.println("hello");
 }
