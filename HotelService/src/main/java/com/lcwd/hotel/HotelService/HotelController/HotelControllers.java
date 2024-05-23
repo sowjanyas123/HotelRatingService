@@ -20,7 +20,7 @@ public class HotelControllers {
 public ResponseEntity<Hotel> createHotel(@RequestBody Hotel hotel){
     Hotel hotels=hotelServ.create(hotel);
     return new ResponseEntity<Hotel>(hotels, HttpStatus.CREATED);
-
+    System.out.println("post map");
 }
 @GetMapping("/{id}")
 public  ResponseEntity<Hotel> GetByid(@PathVariable String id){
